@@ -105,8 +105,6 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 
 # Tableau de suivis
 
-# Tableau 4x4
-
 | Développeur   | Tâches Effectuées  | 
 |-------------|-------------|
 | RAMI     | Taches 1  |  

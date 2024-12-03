@@ -23,25 +23,20 @@ L'application vise à :
 - **Ajouter des dépenses / revenus** : Possibilité d'ajouter des transactions à son budget (revenus, dépenses).
 - **Graphiques de suivi** : Visualisation des finances via des graphiques.
 
-### 2.2 Technologies Utilisées
-- **Frontend** : React.js, HTML5, CSS3
-- **Backend** : Node.js, Express
-- **Versionnement** : GitHub
-
-### 2.3 Plateformes Cibles
+### 2.2 Plateformes Cibles
 - Navigateur web (responsive pour ordinateurs de bureau et mobiles).
 
 
 ## 3. Rôles et Responsabilités
 
-### 4.1 Qui fait quoi ?
-- **Chef de projet** : [RAMI Salah-eddine]
+### 3.1 Qui fait quoi ?
+- **Chef de projet** : [RAMI Salah-eddine](https://github.com/ramisalah2002/)
   - Coordination de l'équipe.
   - Suivi de l'avancement du projet.
   - Validation des livrables.
   - developpement de la page acceuil/popups
   
-- **Développeurs 1** : [NMOUNOUAR Abderrahim]
+- **Développeurs 1** : [MOUNOUAR Abderrahim]
   - Développement de la page signup et login.
    
 - **Développeurs 2** : [SOTIH Mohammed Amine]

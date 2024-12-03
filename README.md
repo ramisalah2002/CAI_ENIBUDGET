@@ -55,4 +55,7 @@ CAI_ENIBUDGET utilise les technologies suivantes :
    - SOTIH
    - MOUNOUAR
    - THOULUC
+
+## Licence
+   Ce projet est sous licence. Consultez le fichier LICENSE pour plus d'informations.
     

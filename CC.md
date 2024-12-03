@@ -75,7 +75,7 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 - EX
 - EX
 - EX
--  Avancement :
+### Avancement :
 - [ ] EX
 - [ ] EX
 - [ ] EX---

@@ -1,159 +1,71 @@
-import React, { useState } from "react";
-import { Line } from 'react-chartjs-2';
-import StatisticsChart from './components/Chart';
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from 'chart.js';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
-// Register the required components for Chart.js
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
+import ChoicePage from "../pages/ChoicePage/ChoicePage";
 
-import './App.css';
-import GridViewIcon from '@mui/icons-material/GridView';
-import CreditCardIcon from '@mui/icons-material/CreditCard';
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
-import InfoIcon from '@mui/icons-material/Info';
-import SettingsIcon from '@mui/icons-material/Settings';
-import LogoutIcon from '@mui/icons-material/Logout';
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa'; // Import icons from react-icons
+import Chat from "../pages/Chat/Chat";
+import Contact from "../pages/email-test/Contact";
+import ForgotPassword from "../pages/ResetPassword/ForgotPassword";
+import ResetPassword from "../pages/ResetPassword/ResetPassword";
+import EmailSent from "../pages/ResetPassword/EmailSent";
+import StagiaireProjet from "../stagiairePages/Projet/Projet";
+import NotFoundPage from "../pages/NotFound/NotFoundPage";
+import PieChart from "../pages/charts/PieChart";
+import ImageUploadForm from "../tests/ImageUploadForm";
+import DisplayImages from "../tests/DisplayImages";
+import Reunion from "../pages/Reunion/Reunion";
+import SendMessagePage from "../pages/email-test/SendMessage";
+import ReceiveMessagePage from "../pages/email-test/ReceiveMessage";
+
+//Providers
+import { AdminProvider } from "../Contexts/AdminContext";
+import { StagiaireProvider } from "../Contexts/StagiaireContext";
+import { EncadrantProvider } from "../Contexts/EncadrantContext";
+
+//Administrateur pages
+import Homepage from "../pages/Homepage/Homepage";
+import LoginPage from "../pages/LoginPage/LoginPage";
+import Parametres from "../pages/Parametres/Parametres";
+import Stagiaire from "../pages/Stagiaire/Stagiaire";
+import Equipes from "../pages/Equipes/Equipes";
+import Absence from "../pages/Absence/Absence";
+import Projet from "../pages/Projet/Projet";
+import Encadrant from "../pages/Encadrant/Encadrant";
+import StagiaireProfile from "../pages/StagiaireProfile/StagiaireProfile";
+
+//Encadrant pages
+import LoginPageEncadrant from "../EncadrantPages/LoginPage/LoginPage";
+import HomepageEncadrant from "../EncadrantPages/Homepage/HomepageEncadrant";
+import EncadrantEquipes from "../EncadrantPages/EncadrantEquipe/EncadrantEquipes";
+import ChatEncadrant from "../EncadrantPages/ChatEncadrant/ChatEncadrant";
+import EncadrantAbsence from "../EncadrantPages/EncadrantAbsence/EncadrantAbsence";
+import EncadrantParametres from "../EncadrantPages/EncadrantParametres/EncadrantParametres";
+import StagiairePage from "../EncadrantPages/StagiairePage/StagiaireProfile";
+
+//Stagiaire pages
+import LoginPageStagiaire from "../stagiairePages/LoginPage/LoginPageStagiaire";
+import StagiaireHomepage from "../stagiairePages/Homepage/Homepage";
+import StagiaireChat from "../stagiairePages/StagiaireChat/StagiaireChat";
+import ProjetStagiaire from "../stagiairePages/Projet/Projet";
+import StagiaireAbsenceMarking from "../stagiairePages/StagiaireAbsence/StagiaireAbsenceMarking";
+import Task from "../stagiairePages/Task/Task";
+import MonProfile from "../stagiairePages/StagiaireProfile/MonProfile";
+import DemanderStage from "../stagiairePages/DemandeStage/DemanderStage";
 
 function App() {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  useEffect(() => {
+    document.title = "MENStage";
+  }, []);
 
-  const [selectedOption, setSelectedOption] = useState("par semaine");
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const options = ["par semaine", "par mois", "par an"];
-
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
-    setDropdownOpen(false); // Close the dropdown
-  };
+  const [user, setUser] = useState(null);
 
   return (
-    <div className='main-container'>
-      <div className='sidebar'>
-        <div className='sidaber-top'>
-          <label className='logo-label'>Enibudget</label>
-          <ul className='nav-links'>
-            <li className='nav-link nav-selected'><GridViewIcon className='' color="black" />Accueil</li>
-            <li className='nav-link other-link'><CreditCardIcon className='other-icon' color="" />Cartes</li>
-            <li className='nav-link other-link'><SignalCellularAltIcon className='other-icon' color="" />Activités</li>
-            <li className='nav-link other-link'><InfoIcon className='other-icon'  color="" />Guide</li>
-            <li className='nav-link other-link'><SettingsIcon className='other-icon'  color="" />Profile</li>
-          </ul>
-        </div>
-        <div className='sidebar-bottom'>
-          <div className='logout-line'></div>
-          <div>
-            <i className='logout-btn'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
-          </div>
-        </div>
-      </div>
-      <div className='right-container'>
-        <div className='header'>
-          <label className='header-title'>Accueil</label>
-          <div className='right-header'>
-            <div className='notif-container'>
-              <NotificationsNoneIcon className='notif-icon'  color="black" />
-            </div>
-            <div className='user-eclipse'></div>
-            <label className='user-name'>Hugo</label>
-          </div>
-        </div>
-        <div className='home-body'>
-          <div className='left-body'>
-            <div className='my-cards-container'>
-              <div className='my-cards-header'>
-                <label className='my-cards-title'>Mes cartes</label>
-                <button className='add-card-btn'>
-                + Ajouter Nouvelle carte</button>
-              </div>
-              <div className='my-cards-info-container'>
-                <div className='my-card-background'>
-                  <div className='my-card-back-header'>
-                    <div className='eclipse eclipse1'></div>
-                    <div className='eclipse eclipse2'></div>
-                  </div>
-                  <div className='my-card-back-bottom'>
-                    <div className='card-number'>xxxx xxxx xxxx 1234</div>
-                    <div className='card-holder-date'>
-                      <label className='card-holder'>SOTIH Amine</label>
-                      <label className='card-date'>09/26</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="stats-container">
-      <div className="flex items-center justify-between mb-2">
-        <h2 className="text-lg font-bold">Statistiques</h2>
-        <div className="flex items-center space-x-4">
-
-          <div className="flex items-center">
-            <span
-              className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: "#4b5bbe" }}
-            ></span>
-            <span className="ml-2 text-sm">Entrant</span>
-          </div>
-          <div className="flex items-center">
-            <span
-              className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: "#e84f16" }}
-            ></span>
-            <span className="ml-2 text-sm">Sortant</span>
-          </div>
-
-          {/* Dropdown */}
-          <div className="relative">
-            <button
-              className="option-btn flex items-center justify-between w-full px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring focus:ring-gray-300"
-              onClick={() => setDropdownOpen((prev) => !prev)}
-            >
-              {selectedOption}{" "}
-              <svg
-                className="w-4 h-4 ml-2"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            {dropdownOpen && (
-              <div className="absolute right-0 z-10 w-32 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg">
-                {options.map((option) => (
-                  <button
-                    key={option}
-                    className="block w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
-                    onClick={() => handleOptionSelect(option)}
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-      <StatisticsChart />
-    </div>
-          </div>
-          <div className='right-body'>
-            <div className='balanse-container'></div>
-            <div className='expense-container'></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Router>
+        <Routes>
+          <Route path="/" element={<ChoicePage />} />
+        </Routes>
+    </Router>
   );
 }
-
-
 export default App;

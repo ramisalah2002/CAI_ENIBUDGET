@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Line } from 'react-chartjs-2';
 import Chart from "../components/Chart";
@@ -6,7 +6,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
 
-import './Accueil.css';
+import './Signup.css';
 import GridViewIcon from '@mui/icons-material/GridView';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
@@ -16,8 +16,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa';
 
-function Accueil() {
-
+function Signup() {
   const navigateTo = useNavigate();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -31,22 +30,6 @@ function Accueil() {
     setDropdownOpen(false); 
   };
 
-  function handleAccueilClick() {
-    navigateTo("../accueil");
-  }
-  function handleCartesClick() {
-    navigateTo("../cartes");
-  }
-  function handleActivitesClick() {
-    navigateTo("../activites");
-  }
-  function handleGuideClick() {
-    navigateTo("../guide");
-  }
-  function handleProfileClick() {
-    navigateTo("../profile");
-  }
-
   return (
     <div className='main-container'>
       <div className='sidebar'>
@@ -54,10 +37,10 @@ function Accueil() {
           <label className='logo-label'>Enibudget</label>
           <ul className='nav-links'>
             <li className='nav-link nav-selected'><GridViewIcon className='' color="black" />Accueil</li>
-            <li className='nav-link other-link' onClick={handleCartesClick}><CreditCardIcon className='other-icon' color="" />Cartes</li>
-            <li className='nav-link other-link' onClick={handleActivitesClick}><SignalCellularAltIcon className='other-icon' color="" />Activités</li>
-            <li className='nav-link other-link' onClick={handleGuideClick}><InfoIcon className='other-icon'  color="" />Guide</li>
-            <li className='nav-link other-link' onClick={handleProfileClick}><SettingsIcon className='other-icon'  color="" />Profile</li>
+            <li className='nav-link other-link'><CreditCardIcon className='other-icon' color="" />Cartes</li>
+            <li className='nav-link other-link'><SignalCellularAltIcon className='other-icon' color="" />Activités</li>
+            <li className='nav-link other-link'><InfoIcon className='other-icon'  color="" />Guide</li>
+            <li className='nav-link other-link'><SettingsIcon className='other-icon'  color="" />Profile</li>
           </ul>
         </div>
         <div className='sidebar-bottom'>
@@ -174,4 +157,4 @@ function Accueil() {
 }
 
 
-export default Accueil;
+export default Signup;

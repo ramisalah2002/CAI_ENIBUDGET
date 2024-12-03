@@ -49,5 +49,10 @@ CAI_ENIBUDGET utilise les technologies suivantes :
     Frontend : React.js, HTML, CSS 
     Backend : Node.js, Express.js
     Graphiques : Chart.js
-   
+
+## Auteurs
+   - RAMI 
+   - SOTIH
+   - MOUNOUAR
+   - THOULUC
     

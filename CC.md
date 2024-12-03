@@ -112,11 +112,11 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 
 # Tableau de suivis
 
-| ---------   | --taches--  | Colonne 3   | Colonne 4   |
-|-------------|-------------|-------------|-------------|
-| RAMI     | Valeur 1.2  | Valeur 1.3  | Valeur 1.4  |
-| MOUNOUAR     | Valeur 2.2  | Valeur 2.3  | Valeur 2.4  |
-| SOTIH     | Valeur 3.2  | Valeur 3.3  | Valeur 3.4  |
-| THOULUC    | Valeur 4.2  | Valeur 4.3  | Valeur 4.4  |
+|   | Taches effectuées  |
+|-------------||
+| RAMI     |   |
+| MOUNOUAR     | |
+| SOTIH     |   |
+| THOULUC    |   |
 
 

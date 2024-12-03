@@ -57,7 +57,7 @@ CAI_ENIBUDGET utilise les technologies suivantes :
 
 ## Cahier des charges
    Consultez le cahier des charges pour plus d'informations.
-   [CC](CC.md)
+   [Cahier des charges](CC.md)
    
 ## Licence
    Ce projet est sous licence. Consultez le fichier LICENSE pour plus d'informations.

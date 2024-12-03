@@ -35,13 +35,13 @@ L'application vise à :
   - Suivi de l'avancement du projet.
   - developpement de la page acceuil/popups
   
-- **Développeurs 1** : [MOUNOUAR Abderrahim](https://github.com/Abderrahim-mn/)
+- **Développeur 1** : [MOUNOUAR Abderrahim](https://github.com/Abderrahim-mn/)
   - Développement de la page signup et login.
    
-- **Développeurs 2** : [SOTIH Mohammed Amine](https://github.com/Sotih/)
+- **Développeus 2** : [SOTIH Mohammed Amine](https://github.com/Sotih/)
   - Développement de la page cartes et profile.
  
-- **Développeurs 3** : [THOULUC Hugo](https://github.com/HugoThouluc/)
+- **Développeur 3** : [THOULUC Hugo](https://github.com/HugoThouluc/)
   - Développement de la page guides.
 
 

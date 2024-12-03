@@ -64,12 +64,8 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 
 
 
-# 6. Suivi d'Avancement du Projet : **CAI_ENIBUDGET**
-
-## Période : 15 Jours
-
-### Introduction
-Ce fichier permet de suivre l'avancement du développement de l'application **CAI_ENIBUDGET** sur une période de 15 jours. Chaque jour, les tâches, progrès et obstacles rencontrés sont documentés par les développeurs.
+## 6. Suivi d'Avancement du Projet : **CAI_ENIBUDGET**
+    Cette partie permet de suivre l'avancement du développement de l'application **CAI_ENIBUDGET** sur une période de 15 jours. Chaque jour, les tâches, progrès et obstacles rencontrés sont documentés par les développeurs.
 
 ---
 

@@ -21,3 +21,47 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
 1. Clone ce repository sur ton machine locale :
    ```bash
    git clone https://github.com/ramisalah2002/CAI_ENIBUDGET/T.git
+
+2. Accédez au dossier du projet :
+   ```bash
+   cd CAI_ENIBUDGET
+
+3. Installez les dépendances :
+   ```bash
+   npm install
+4. Démarrez l'application
+   ```bash
+   npm start
+   
+## Utilisation
+
+Une fois l'application lancée, vous pouvez vous inscrire ou vous connecter si vous avez déjà un compte. Voici les étapes principales pour utiliser l'application :
+
+   1. Créer un compte : Inscrivez-vous avec votre adresse email pour commencer à utiliser l'application.
+   2. Ajouter vos sources de revenus et vos dépenses : Vous pouvez rapidement saisir vos revenus (bourse, job étudiant, etc.) et vos dépenses (loyer, alimentation, loisirs).
+   3. Suivre votre budget : Visualisez en temps réel vos dépenses et comparez-les à votre budget initial.
+   4. Utiliser les graphiques : Consultez des graphiques interactifs pour mieux comprendre l'évolution de vos finances.
+      
+## Technologies
+
+CAI_ENIBUDGET utilise les technologies suivantes :
+
+    Frontend : React.js, HTML, CSS 
+    Graphiques : Chart.js
+
+## Auteurs
+   - RAMI 
+   - SOTIH
+   - MOUNOUAR
+   - THOULUC
+
+## Cahier des charges
+   Consultez le cahier des charges pour plus d'informations.
+   [Cahier des charges](CC.md)
+   
+## Licence
+   Ce projet est sous licence. Consultez le fichier LICENSE pour plus d'informations.
+   [LICENSE](LICENSE.md)
+
+
+    

@@ -58,6 +58,6 @@ CAI_ENIBUDGET utilise les technologies suivantes :
 
 ## Licence
    Ce projet est sous licence. Consultez le fichier LICENSE pour plus d'informations.
-   [Voir le fichier d'installation](LICENSE.md)
+   [LICENSE](LICENSE.md)
 
     

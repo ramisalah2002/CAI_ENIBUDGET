@@ -32,3 +32,23 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
 4. Démarrez l'application
    ```bash
    npm start
+   
+## Utilisation
+
+Une fois l'application lancée, vous pouvez vous inscrire ou vous connecter si vous avez déjà un compte. Voici les étapes principales pour utiliser l'application :
+
+   1. Créer un compte : Inscrivez-vous avec votre adresse email pour commencer à utiliser l'application.
+   2. Ajouter vos sources de revenus et vos dépenses : Vous pouvez rapidement saisir vos revenus (bourse, job étudiant, etc.) et vos dépenses (loyer, alimentation, loisirs).
+   3. Suivre votre budget : Visualisez en temps réel vos dépenses et comparez-les à votre budget initial.
+   4. Utiliser les graphiques : Consultez des graphiques interactifs pour mieux comprendre l'évolution de vos finances.
+      
+## Technologies
+
+CAI_ENIBUDGET utilise les technologies suivantes :
+
+    Frontend : React.js, HTML, CSS 
+    Backend : Node.js, Express.js
+    
+    Graphiques : Chart.js
+   
+    

@@ -2,7 +2,7 @@ import { Hidden } from '@mui/material';
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 
-function StatisticsChart() {
+function Chart() {
     const options = {
         responsive: true,
         plugins: {
@@ -153,4 +153,4 @@ function StatisticsChart() {
   return <Line data={data} options={options} plugins={[shadowPlugin]}/>;
 }
 
-export default StatisticsChart;
+export default Chart;

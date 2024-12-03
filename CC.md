@@ -73,128 +73,27 @@ Ce fichier permet de suivre l'avancement du développement de l'application **CA
 
 ---
 
-## **Jour 1 :**
+## **Semaine 1 :**
 
 ### Tâches à accomplir :
-- Installation de l'environnement de développement
-- Mise en place du projet initial avec la structure de répertoires
-- Création du dépôt Git et branche principale
+- EX
+- EX
+- EX
+-  Avancement :
+- [ ] EX
+- [ ] EX
+- [ ] EX---
 
-### Avancement :
-- [ ] Installation de l'environnement de développement (Node.js, MongoDB, etc.)
-- [ ] Création du projet avec `npm init`
-- [ ] Configuration de la branche principale et premier commit
-
----
-
-## **Jour 2 :**
+## **Semaine 2 :**
 
 ### Tâches à accomplir :
-- Définition des exigences techniques (choix du framework, base de données)
-- Conception de la base de données
+- EX
+- EX
 
 ### Avancement :
-- [ ] Choix du framework front-end (React, Vue, etc.)
-- [ ] Choix de la base de données (MongoDB, PostgreSQL, etc.)
-- [ ] Création du schéma de la base de données
-
----
-
-## **Jour 3 :**
-
-### Tâches à accomplir :
-- Mise en place du backend (API, routes)
-- Intégration de la base de données
-
-### Avancement :
-- [ ] Mise en place des routes API (GET, POST, etc.)
-- [ ] Intégration de la base de données et tests de connexion
-
----
-
-## **Jour 4 :**
-
-### Tâches à accomplir :
-- Développement de la page d'inscription
-- Mise en place de la gestion des utilisateurs (JWT, session)
-
-### Avancement :
-- [ ] Création du formulaire d'inscription
-- [ ] Mise en place de l'authentification avec JWT
-
----
-
-## **Jour 5 :**
-
-### Tâches à accomplir :
-- Développement de la page de connexion
-- Ajout de la fonctionnalité de réinitialisation du mot de passe
-
-### Avancement :
-- [ ] Création du formulaire de connexion
-- [ ] Intégration de la fonctionnalité de réinitialisation de mot de passe
-
----
-
-## **Jour 6 à Jour 10 :** (Tâches sur 5 jours)
-
-### Tâches à accomplir :
-- Développement des pages de gestion de budget (ajouter, supprimer, modifier une dépense)
-- Visualisation des dépenses par catégories (graphiques)
-
-### Avancement :
-- [ ] Mise en place de la page de gestion des dépenses
-- [ ] Ajout de la fonctionnalité de visualisation graphique des dépenses (avec une bibliothèque comme Chart.js ou D3.js)
-- [ ] Tests unitaires pour les fonctionnalités de gestion des dépenses
-
----
-
-## **Jour 11 :**
-
-### Tâches à accomplir :
-- Optimisation de l'application pour la production (minification, compression)
-- Tests de performance
-
-### Avancement :
-- [ ] Mise en place de la compression des fichiers statiques
-- [ ] Tests de performance et optimisation du code
-
----
-
-## **Jour 12 :**
-
-### Tâches à accomplir :
-- Tests d'interface utilisateur (UI)
-- Tests de compatibilité (navigateurs et appareils)
-
-### Avancement :
-- [ ] Tests sur différents navigateurs (Chrome, Firefox, Safari)
-- [ ] Vérification de la réactivité de l'interface sur mobile
-
----
-
-## **Jour 13 à Jour 14 :**
-
-### Tâches à accomplir :
-- Mise en place de la documentation du projet
-- Finalisation du README et préparation du déploiement
-
-### Avancement :
-- [ ] Rédaction de la documentation technique
-- [ ] Mise à jour du fichier README
-- [ ] Préparation du projet pour le déploiement (sur un serveur ou plateforme comme Heroku)
-
----
-
-## **Jour 15 :**
-
-### Tâches à accomplir :
-- Finalisation du déploiement
-- Tests finaux et validation des fonctionnalités
-
-### Avancement :
-- [ ] Déploiement sur Heroku ou autre plateforme
-- [ ] Tests de validation et de contrôle qualité
+- [ ] EX
+- [ ] EX
+- [ ] EX
 
 ---
 

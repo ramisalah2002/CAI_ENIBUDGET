@@ -26,13 +26,10 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
    ```bash
    cd CAI_ENIBUDGET
 
-4. Installez les dépendances :
-
-#### Si vous utilisez npm :
-
-```bash
+3. Installez les dépendances :
+   ```bash
    npm install
 
-5.Démarrez l'application
+4.Démarrez l'application
    ```bash
    npm start

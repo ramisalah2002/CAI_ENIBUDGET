@@ -108,4 +108,15 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 
 ### **Notes :**
 - [ ] Ajouter des notes concernant des points importants, des suggestions ou des améliorations pour le projet.
+- [ ] 
+
+# Tableau 4x4
+
+| ---------   | --taches--  | Colonne 3   | Colonne 4   |
+|-------------|-------------|-------------|-------------|
+| Ligne 1     | Valeur 1.2  | Valeur 1.3  | Valeur 1.4  |
+| Ligne 2     | Valeur 2.2  | Valeur 2.3  | Valeur 2.4  |
+| Ligne 3     | Valeur 3.2  | Valeur 3.3  | Valeur 3.4  |
+| Ligne 4     | Valeur 4.2  | Valeur 4.3  | Valeur 4.4  |
+
 

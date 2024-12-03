@@ -47,7 +47,6 @@ Une fois l'application lancée, vous pouvez vous inscrire ou vous connecter si v
 CAI_ENIBUDGET utilise les technologies suivantes :
 
     Frontend : React.js, HTML, CSS 
-    Backend : Node.js, Express.js
     Graphiques : Chart.js
 
 ## Auteurs

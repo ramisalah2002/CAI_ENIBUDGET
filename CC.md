@@ -33,14 +33,13 @@ L'application vise à :
 - **Chef de projet** : [RAMI Salah-eddine](https://github.com/ramisalah2002/)
   - Coordination de l'équipe.
   - Suivi de l'avancement du projet.
-  - Validation des livrables.
   - developpement de la page acceuil/popups
   
 - **Développeurs 1** : [MOUNOUAR Abderrahim](https://github.com/Abderrahim-mn/)
   - Développement de la page signup et login.
    
 - **Développeurs 2** : [SOTIH Mohammed Amine](https://github.com/Sotih/)
-  - Développement de la page cartes.
+  - Développement de la page cartes et profile.
  
 - **Développeurs 3** : [THOULUC Hugo](https://github.com/HugoThouluc/)
   - Développement de la page guides.

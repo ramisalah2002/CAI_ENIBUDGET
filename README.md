@@ -7,7 +7,6 @@
 - **Suivi des dépenses** : Enregistre et catégorise tes dépenses pour une gestion claire et précise de ton budget.
 - **Planification des budgets mensuels** : Crée des budgets personnalisés en fonction de tes revenus et de tes dépenses prévues.
 - **Analyse des finances** : Visualise tes finances à l'aide de graphiques et de rapports détaillés pour mieux comprendre où va ton argent.
-- **Alertes et notifications** : Reçois des alertes lorsque tu approches de ton budget ou lorsque des dépenses imprévues surviennent.
 - **Accessibilité** : Accessible sur n'importe quel appareil avec une connexion Internet, tu peux gérer ton budget où que tu sois.
 
 ## Prérequis
@@ -21,4 +20,4 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
 
 1. Clone ce repository sur ton machine locale :
    ```bash
-   git clone https://github.com/ton-compte/CAI_ENIBUDGET.git
+   git clone https://github.com/ramisalah2002/CAI_ENIBUDGET/T.git

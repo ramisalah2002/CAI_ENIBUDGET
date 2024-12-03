@@ -39,10 +39,10 @@ L'application vise à :
 - **Développeurs 1** : [MOUNOUAR Abderrahim](https://github.com/Abderrahim-mn/)
   - Développement de la page signup et login.
    
-- **Développeurs 2** : [SOTIH Mohammed Amine](https://github.com/ramisalah2002/)
+- **Développeurs 2** : [SOTIH Mohammed Amine](https://github.com/Sotih/)
   - Développement de la page cartes.
  
-- **Développeurs 3** : [THOULUC Hugo](https://github.com/ramisalah2002/)
+- **Développeurs 3** : [THOULUC Hugo](https://github.com/HugoThouluc/)
   - Développement de la page guides.
 
 

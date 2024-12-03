@@ -29,7 +29,6 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
 3. Installez les dépendances :
    ```bash
    npm install
-
-4.Démarrez l'application
+4. Démarrez l'application
    ```bash
       npm start

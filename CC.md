@@ -36,31 +36,29 @@ L'application vise à :
   - Validation des livrables.
   - developpement de la page acceuil/popups
   
-- **Développeurs 1** : [MOUNOUAR Abderrahim]
+- **Développeurs 1** : [MOUNOUAR Abderrahim](https://github.com/Abderrahim-mn/)
   - Développement de la page signup et login.
    
-- **Développeurs 2** : [SOTIH Mohammed Amine]
+- **Développeurs 2** : [SOTIH Mohammed Amine](https://github.com/ramisalah2002/)
   - Développement de la page cartes.
  
-- **Développeurs 3** : [THOULUC Hugo]
+- **Développeurs 3** : [THOULUC Hugo](https://github.com/ramisalah2002/)
   - Développement de la page guides.
 
 
+## 4. Contraintes
 
-
-## 5. Contraintes
-
-### 5.1 Techniques
+### 4.1 Techniques
 - L'application doit être accessible depuis tous les navigateurs modernes.
 - Elle doit être responsive (fonctionner sur les ordinateurs de bureau et les appareils mobiles).
 
-### 5.2 Organisationnelles
+### 4.2 Organisationnelles
 - Le projet doit être livré dans un délai de 22 décembre 2024.
 - Une communication régulière entre les membres de l'équipe est essentielle.
 
-### 5.3 Légales
+### 4.3 Légales
 - Protection des données utilisateurs selon le RGPD (Règlement Général sur la Protection des Données).
 
-## 6. Conclusion
+## 5. Conclusion
 Ce cahier des charges définit les objectifs, les fonctionnalités principales et les responsabilités des différents membres de l'équipe de développement. Le respect des délais et des exigences est essentiel pour la réussite du projet **CAI_ENIBUDGET**.
 

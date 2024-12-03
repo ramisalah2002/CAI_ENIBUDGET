@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Line } from 'react-chartjs-2';
-import StatisticsChart from './components/Chart';
+import Chart from '../components/Chart';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
@@ -141,7 +141,7 @@ function Accueil() {
           </div>
         </div>
       </div>
-      <StatisticsChart />
+      <Chart />
     </div>
           </div>
           <div className='right-body'>

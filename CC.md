@@ -58,13 +58,8 @@ L'application vise à :
 ### 4.3 Légales
 - Protection des données utilisateurs selon le RGPD (Règlement Général sur la Protection des Données).
 
-## 5. Conclusion
-Ce cahier des charges définit les objectifs, les fonctionnalités principales et les responsabilités des différents membres de l'équipe de développement. Le respect des délais et des exigences est essentiel pour la réussite du projet **CAI_ENIBUDGET**.
 
-
-
-
-## 6. Suivi d'Avancement du Projet : **CAI_ENIBUDGET**
+## 5. Suivi d'Avancement du Projet : **CAI_ENIBUDGET**
     Cette partie permet de suivre l'avancement du développement de l'application **CAI_ENIBUDGET** sur une période de 15 jours. Chaque jour, les tâches, progrès et obstacles rencontrés sont documentés par les développeurs.
 
 ---
@@ -109,8 +104,10 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 
 ### **Notes :**
 - [ ] Ajouter des notes concernant des points importants, des suggestions ou des améliorations pour le projet.
-- [ ] 
 
+
+# Conclusion
+Ce cahier des charges définit les objectifs, les fonctionnalités principales et les responsabilités des différents membres de l'équipe de développement. Le respect des délais et des exigences est essentiel pour la réussite du projet **CAI_ENIBUDGET**.
  
 
 

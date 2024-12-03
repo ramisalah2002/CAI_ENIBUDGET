@@ -24,15 +24,15 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
 
 2. Accédez au dossier du projet :
    ```bash
-cd CAI_ENIBUDGET
+   cd CAI_ENIBUDGET
 
 4. Installez les dépendances :
 
 #### Si vous utilisez npm :
 
 ```bash
-npm install
+   npm install
 
-3.Démarrez l'application
+5.Démarrez l'application
    ```bash
-npm start
+   npm start

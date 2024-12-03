@@ -68,6 +68,14 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
     Cette partie permet de suivre l'avancement du développement de l'application **CAI_ENIBUDGET** sur une période de 15 jours. Chaque jour, les tâches, progrès et obstacles rencontrés sont documentés par les développeurs.
 
 ---
+# Tableau de suivis
+
+| Développeur   | Tâches Effectuées  | 
+|-------------|-------------|
+| RAMI     | Taches 1  |  
+| MOUNOUAR| Taches 1  | 
+| SOTIH     | Taches 1  |  
+| THOULUC    | Taches 1  | 
 
 ## **Semaine 1 :**
 
@@ -103,14 +111,7 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 - [ ] Ajouter des notes concernant des points importants, des suggestions ou des améliorations pour le projet.
 - [ ] 
 
-# Tableau de suivis
-
-| Développeur   | Tâches Effectuées  | 
-|-------------|-------------|
-| RAMI     | Taches 1  |  
-| MOUNOUAR| Taches 1  | 
-| SOTIH     | Taches 1  |  
-| THOULUC    | Taches 1  |  
+ 
 
 
 

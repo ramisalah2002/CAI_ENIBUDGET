@@ -90,19 +90,12 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 - [ ] EX
 - [ ] EX
 - [ ] EX
-
----
-
-### **Résumé :**
-- Tâches complètes : [X]
-- Tâches en cours : [X]
-- Tâches à faire : [X]
-
+      
 ---
 
 ### **Observations / Problèmes rencontrés :**
-- [ ] Problème X rencontré lors de l'intégration de l'API
-- [ ] Difficultés liées à la gestion des sessions utilisateurs
+- [ ] Problème X 
+- [ ] Difficultés X
 
 ---
 
@@ -114,7 +107,7 @@ Ce cahier des charges définit les objectifs, les fonctionnalités principales e
 
 # Tableau 4x4
 
-| Colonne 1   | Tâches Effectuées  | 
+| Développeur   | Tâches Effectuées  | 
 |-------------|-------------|
 | RAMI     | Taches 1  |  
 | MOUNOUAR| Taches 1  | 

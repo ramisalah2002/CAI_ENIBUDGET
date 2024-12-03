@@ -21,3 +21,10 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
 1. Clone ce repository sur ton machine locale :
    ```bash
    git clone https://github.com/ramisalah2002/CAI_ENIBUDGET/T.git
+
+### Installez les dépendances :
+
+#### Si vous utilisez npm :
+
+```bash
+npm install

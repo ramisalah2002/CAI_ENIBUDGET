@@ -31,4 +31,4 @@ Avant de pouvoir utiliser l'application, assure-toi que tu as les éléments sui
    npm install
 4. Démarrez l'application
    ```bash
-      npm start
+   npm start

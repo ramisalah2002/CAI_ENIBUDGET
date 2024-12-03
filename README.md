@@ -56,7 +56,7 @@ CAI_ENIBUDGET utilise les technologies suivantes :
    - THOULUC
 
 ## Cahier des charges
-   Consultez le fichier CC pour plus d'informations.
+   Consultez le cahier des charges pour plus d'informations.
    [CC](CC.md)
    
 ## Licence

@@ -15,6 +15,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa';
+import Img from '../img/profile.png';
+import EditImg from '../img/edit.png';
 
 function Profile() {
   const navigateTo = useNavigate();
@@ -66,6 +68,7 @@ function Profile() {
           </div>
         </div>
       </div>
+   
       <div className='right-container'>
         <div className='header'>
           <label className='header-title'>Accueil</label>
@@ -77,7 +80,77 @@ function Profile() {
             <label className='user-name'>Hugo</label>
           </div>
         </div>
-        
+
+        <section className="profile-section">
+          <h2 className="section-title">Modifier les informations</h2>
+          <div className="profile-content">
+            <div className="profile-image">
+              <img src={Img} alt="Profile" />
+              <button className="edit-button">
+                <img src={EditImg}/>
+              </button>
+            </div>
+
+            <form className="profile-form">
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="firstName">Prénom</label>
+                  <input type="text" id="firstName" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="lastName">Nom</label>
+                  <input type="text" id="lastName" />
+                </div>
+              </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="birthDate">Date de naissance</label>
+                  <input type="date" id="birthDate" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="gender">Genre</label>
+                  <input type="text" id="gender" />
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Adresse mail</label>
+                <input type="email" id="email" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="phone">Numéro de téléphone</label>
+                <input type="text" id="phone" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="address">Adresse</label>
+                <input type="text" id="address" />
+              </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="city">Ville</label>
+                  <input type="text" id="city" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="state">Provence</label>
+                  <input type="text" id="state" />
+                </div>
+              </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="postalCode">Code postal</label>
+                  <input type="text" id="postalCode" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="country">Pays</label>
+                  <input type="text" id="country" />
+                </div>
+              </div>
+              <div className="form-actions">
+                <button type="button" className="cancel-button">Annuler</button>
+                <button type="submit" className="save-button">Enregistrer</button>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
     </div>
   );

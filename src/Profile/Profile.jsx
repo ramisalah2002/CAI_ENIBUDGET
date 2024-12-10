@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { Line } from 'react-chartjs-2';
 import Chart from "../components/Chart";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from 'chart.js';
+import AddCard from "../components/popups/addCard";
+import AddExpence from "../components/popups/AddExpense";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
 
@@ -20,6 +22,8 @@ import EditImg from '../img/edit.png';
 
 function Profile() {
   const navigateTo = useNavigate();
+  const [counter, setCounter] = useState(false);
+
 
   function handleAccueilClick() {
     navigateTo("../accueil");
@@ -36,17 +40,20 @@ function Profile() {
   function handleProfileClick() {
     navigateTo("../profile");
   }
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const [selectedOption, setSelectedOption] = useState("par semaine");
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  function handleAnnulerClick() {
+    setCounter(true);
+  }
 
-  const options = ["par semaine", "par mois", "par an"];
-
+  function handleLogoutClick() {
+    setCounter(true);
+  }
+  
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
     setDropdownOpen(false); 
   };
+  
 
   return (
     <div className='main-container'>
@@ -64,14 +71,14 @@ function Profile() {
         <div className='sidebar-bottom'>
           <div className='logout-line'></div>
           <div>
-            <i className='logout-btn'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
+            <i className='logout-btn'><LogoutIcon className='logout-icon' onClick={handleLogoutClick} color="black" />Deconnexion</i>
           </div>
         </div>
       </div>
    
       <div className='right-container'>
         <div className='header'>
-          <label className='header-title'>Accueil</label>
+          <label className='header-title'>Profile</label>
           <div className='right-header'>
             <div className='notif-container'>
               <NotificationsNoneIcon className='notif-icon'  color="black" />
@@ -145,13 +152,18 @@ function Profile() {
                 </div>
               </div>
               <div className="form-actions">
-                <button type="button" className="cancel-button">Annuler</button>
+                <button type="button" className="cancel-button" onClick={handleAnnulerClick}>Annuler</button>
                 <button type="submit" className="save-button">Enregistrer</button>
               </div>
             </form>
           </div>
         </section>
       </div>
+      {counter && (
+        //<AddCard></AddCard>
+        <AddExpence></AddExpence>
+        
+      )}
     </div>
   );
 }

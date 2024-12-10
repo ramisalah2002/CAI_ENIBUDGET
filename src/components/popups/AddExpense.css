@@ -1,0 +1,162 @@
+/* Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Popup Container */
+  .popup-container {
+    background: white;
+    width: 430px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Title */
+  .popup-title {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Divider */
+  .divider {
+    width: 1px;
+    height: 200px;
+    background: #D9D9D9;
+  }
+  
+  /* Form */
+  .popup-form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  /* Form Section */
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .categories-section {
+    margin-top: 20px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  
+  .calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+  }
+  
+  /* Categories */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .category-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .category-icon.food { background: #F7D26F; }
+  .category-icon.shopping { background: #67D1B6; }
+  .category-icon.transport { background: #3280F4; }
+  .category-icon.bills { background: #684FF2; }
+  .category-icon.health { background: #93BEDE; }
+  .category-icon.more {
+    background: #E1E1E0;
+    font-weight: bold;
+  }
+  .input-wrapper .form-input{
+    font-size: 12px;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .add-button {
+    width: 120px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    width: 120px;
+    background: white;
+    border: 1px solid #E1E1E0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+
+  

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "../App.css";
+import "./App.css";
 
 import Accueil from "./Accueil/Accueil";
 import Cartes from "./Cartes/Cartes";

@@ -209,7 +209,9 @@ function Accueil() {
                 <label className="balances-money"><p>€</p>456.78</label>
               </div>
             </div>
-            <div className='expense-container'></div>
+            <div className='expense-container'>
+              
+            </div>
           </div>
         </div>
       </div>

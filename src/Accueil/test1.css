@@ -343,6 +343,9 @@ body {
 }
 .right-body{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .balance-container{
     width: 100%;
@@ -374,7 +377,7 @@ body {
     text-transform: uppercase;
 }
 .balances-money{
-    font-size: 22px;
+    font-size: 24px;
     font-family: 'Poppins';
     font-weight: 900;
     text-wrap: nowrap;
@@ -461,4 +464,10 @@ body {
 .green-arrow *{
     padding: 10px;
     color: #0CBC67;
+}
+.expense-container{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 15px;
 }

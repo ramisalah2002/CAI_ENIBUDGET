@@ -5,6 +5,8 @@ import Chart from "../components/Chart";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from 'chart.js';
 import AddCard from "../components/popups/addCard";
 import AddExpence from "../components/popups/AddExpense";
+import Logout from "../components/popups/Logout";
+import ChangeBudget from "../components/popups/changeBudget";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
 
@@ -161,7 +163,9 @@ function Profile() {
       </div>
       {counter && (
         //<AddCard></AddCard>
-        <AddExpence></AddExpence>
+        //<AddExpence></AddExpence>
+        <ChangeBudget></ChangeBudget>
+        //<Logout></Logout>
         
       )}
     </div>

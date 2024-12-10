@@ -199,8 +199,8 @@ body {
     display: flex;
     width: 100%;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: start;
 }
 
 .my-card-background{
@@ -280,8 +280,63 @@ body {
 }
 .option-btn{
     width: 100%;
-position: relative;
-border-radius: 5px;
-background-color: #f6f6f6;
-height: 37px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    height: 37px;
+}
+.my-cards-info-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card-info-section{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100% !important;
+    padding: 10px;
+    margin: 0px;
+}
+.montant-dispo-label{
+    font-size: 14px;
+    color: #ababab;
+}
+.montant-dispo{
+    font-size: 28px;
+    font-family: "Poppins";
+    margin-bottom: 20px;
+}
+
+.solde-limit-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 10px;
+}
+.solde-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.limit-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.solde-limit-container *{
+    font-size: 12px;
+    color: #acacac;
+}
+.montant-text{
+    font-size: 20px;
+    color: #000;
 }

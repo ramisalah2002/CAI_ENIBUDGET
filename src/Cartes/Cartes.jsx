@@ -41,11 +41,19 @@ function Cartes() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const options = ["par semaine", "par mois", "par an"];
+  
 
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
     setDropdownOpen(false); // Close the dropdown
   };
+  const CategoriesBudgetaires = () => {
+    const categories = [
+      { name: 'Fastfood', amount: '€60', limit: '€40', percentage: 50 },
+      { name: 'Courses', amount: '€60', limit: '€40', percentage: 25 },
+      { name: 'Beauté & santé', amount: '€20', limit: '€40', percentage: 50 },
+    ];}
+  
 
   return (
     <div className='main-container-1'>
@@ -71,11 +79,11 @@ function Cartes() {
         <div className='header-1'>
           <label className='header-title-1'>Cartes</label>
           <div className='right-header-1'>
-            <div className='notif-container-1'>
+          <div className='notif-container'>
               <NotificationsNoneIcon className='notif-icon'  color="black" />
             </div>
-            <div className='user-eclipse-1'></div>
-            <label className='user-name-1'>Hugo</label>
+            <div className='user-eclipse'></div>
+            <label className='user-name'>Hugo</label>
           </div>
         </div>
         <div className='home-body-1'>
@@ -112,18 +120,31 @@ function Cartes() {
                    
                 
               </div>
-              <div className="mes-cats-1">
-                      <div className="cat-food">
-
-                       </div>
-                      <div className="cat-courses">
-
-                       </div>
-                      <div className="cat-beaute">
-
-                       </div>
-
-                    </div>
+               <div className="mes-cats">
+                             {/* <div className="categories-cards">
+                                      {categories.map((category, index) => (
+                                        <div className="category-card" key={index}>
+                                          <div className="category-icon">
+                                            {/* Utilisez une icône ou un texte pour représenter chaque catégorie 
+                                            <span role="img" aria-label="icon">🍔</span>
+                                          </div>
+                                          <div className="category-details">
+                                            <h4 className="category-name">{category.name}</h4>
+                                            <p className="category-amount">
+                                              {category.amount} / {category.limit}
+                                            </p>
+                                            <div className="category-progress">
+                                              <div
+                                                className="progress-bar"
+                                                style={{ width: `${category.percentage}%` }}
+                                              ></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      ))}
+                               </div>*/}
+  
+              </div>
              
             </div>
             

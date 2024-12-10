@@ -169,119 +169,110 @@ body {
     height: 320px;
     gap: 26px;
 }
-.my-cards-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    margin-bottom: 15px;
-}
-.my-cards-header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.my-cards-header .my-cards-title{
-    font-size: 24px;
-}
-.my-cards-header .add-card-btn{
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ebeaee;
-    height: 44px;
-    text-align: center;
-    width: fit-content;
-}
-.my-cards-info-container{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.my-card-background{
-    width: 400px;
-    position: relative;
-    border-radius: 20px;
-    background-color: #46445a;
-    height: 225px;
-}
-.my-cards-info{
-    width: 100%;
-    height: 225px;
-}
-.my-card-back-header{
-    width: 100%;
-    height: 45%;
-    background: #46445a;
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-}
-.my-card-back-bottom{
-    width: 100%;
-    height: 55%;
-    background: #535169;
-    border-radius: 0px 0px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-    padding-top: 10px;
-}
-.eclipse{
-    width: 34px;
-    position: relative;
-    border-radius: 50%;
-    background-color: rgba(122, 121, 135, 0.66);
-    height: 34px;
-}
-.eclipse2{
-    margin-left: -15px;
-}
-.card-number{
-    font-size: 22px;
-    display: inline-block;
-    font-family: Poppins;
-    color: #fff;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-.card-holder-date{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.card-holder-date *{
-    font-size: 16px;
-    display: inline-block;
-    font-family: Poppins;
-    color: #fff;
-    text-align: left;
-    font-weight: 900;
-}
-.stats-container{
-    width: 100%;
+.profile-section {
+    background: white;
+    height: 100%;
     border-radius: 15px;
-    background-color: #fff;
-    height: fit-content;
-    padding: 20px;
+    padding: 80px 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6C798E;
+    margin-bottom: 20px;
+  }
+  
+  .profile-content {
+    display: flex;
     gap: 20px;
-}
-.option-btn{
+  }
+  
+  .profile-image {
+    position: relative;
+    height: fit-content;
+  }
+  
+  .profile-image img {
+    width: 154px;
+    height: 154px;
+    border-radius: 10px;
+  }
+  
+  .edit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    border: 1px solid #C2CBD2;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+  }
+  .edit-button img{
+    width: 30px;
+    height: 100%;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap:20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #747B8F;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
     width: 100%;
-position: relative;
-border-radius: 5px;
-background-color: #f6f6f6;
-height: 37px;
-}
+    padding: 10px;
+    border: 1px solid #F6F7F9;
+    border-radius: 5px;
+    background-color: #F2F3F7;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid #ACACAC;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

@@ -64,18 +64,18 @@ function Guide() {
       <div className='sidebar'>
         <div className='sidaber-top'>
           <label className='logo-label'>Enibudget</label>
-          <ul className='nav-links'>
-            <li className='nav-link other-link'onClick={handleAccueilClick}>Accueil</li>
-            <li className='nav-link other-link'onClick={handleCartesClick}>Cartes</li>
-            <li className='nav-link other-link'onClick={handleActivitesClick}>Activités</li>
-            <li className='nav-link nav-selected'onClick={handleGuideClick}>Guide</li>
-            <li className='nav-link other-link'onClick={handleProfileClick}>Profile</li>
+          <ul className='nav-links-1'>
+            <li className='nav-link other-link' onClick={handleAccueilClick}><GridViewIcon className='' color="black" />Accueil</li>
+            <li className='nav-link other-link' onClick={handleCartesClick}><CreditCardIcon className='other-icon' color="" />Cartes</li>
+            <li className='nav-link other-link' onClick={handleActivitesClick}><SignalCellularAltIcon className='other-icon' color="" />Activités</li>
+            <li className='nav-link nav-selected' onClick={handleGuideClick}><InfoIcon className='other-icon'  color="" />Guide</li>
+            <li className='nav-link other-link' onClick={handleProfileClick}><SettingsIcon className='other-icon'  color="" />Profile</li>
           </ul>
         </div>
         <div className='sidebar-bottom'>
           <div className='logout-line'></div>
           <div>
-            <i className='logout-btn'>Deconnexion</i>
+          <i className='logout-btn-1'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ function Guide() {
       <div className='header'>
           <label className='header-title'>Accueil</label>
           <div className='right-header'>
-            <div className='notif-container'>
+          <div className='notif-container'>
               <NotificationsNoneIcon className='notif-icon'  color="black" />
             </div>
             <div className='user-eclipse'></div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Line } from 'react-chartjs-2';
 import Chart from "../components/Chart";
+import Logout from "../components/popups/Logout";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
@@ -26,6 +27,8 @@ function Accueil() {
 
   const options = ["par semaine", "par mois", "par an"];
 
+  const [counter, setCounter] = useState(false);
+  
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
     setDropdownOpen(false); 
@@ -46,6 +49,9 @@ function Accueil() {
   function handleProfileClick() {
     navigateTo("../profile");
   }
+  function handleLogoutClick() {
+    setCounter(true);
+  }
 
   return (
     <div className='main-container'>
@@ -63,7 +69,7 @@ function Accueil() {
         <div className='sidebar-bottom'>
           <div className='logout-line'></div>
           <div>
-            <i className='logout-btn'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
+            <i className='logout-btn'onClick={handleLogoutClick}><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
           </div>
         </div>
       </div>
@@ -215,6 +221,9 @@ function Accueil() {
           </div>
         </div>
       </div>
+      {counter && (
+        <Logout></Logout>     
+      )}
     </div>
   );
 }

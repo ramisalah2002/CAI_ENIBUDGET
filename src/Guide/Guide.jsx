@@ -22,7 +22,7 @@ import ArrowDownIcon from "../components/ArrowDownIcon";
 import MoreIcon from "../components/MoreIcon";
 import MenuIcon from "../components/MenuIcon";
 import GroupIcon from "../components/GroupIcon";
-import Logout from "../components/popups/logout";
+import Logout from "../components/popups/Logout";
 
 import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa';
 import SupportImg from "../img/support.png";
@@ -30,6 +30,7 @@ import SupportImg from "../img/support.png";
 
 function Guide() {
   const navigateTo = useNavigate();
+  const [counter, setCounter] = useState(false);
 
   function handleAccueilClick() {
     navigateTo("../accueil");
@@ -45,6 +46,10 @@ function Guide() {
   }
   function handleProfileClick() {
     navigateTo("../profile");
+  }
+
+  function handleLogoutClick() {
+    setCounter(true);
   }
   
 
@@ -76,7 +81,7 @@ function Guide() {
         <div className='sidebar-bottom'>
           <div className='logout-line'></div>
           <div>
-          <i className='logout-btn-1'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
+          <i className='logout-btn-1' onClick={handleLogoutClick}><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
           </div>
         </div>
       </div>
@@ -196,6 +201,10 @@ function Guide() {
           </div>
         </div>
       </div>
+      {counter && (
+        <Logout></Logout>
+        
+      )}
     </div>
   );
 }

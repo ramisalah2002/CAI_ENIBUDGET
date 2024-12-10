@@ -1,7 +1,12 @@
 import React from 'react';
 import './logout.css';
+import { Link, useNavigate } from "react-router-dom";
+
+
 
 function Logout({ onCancel, onConfirm }) {
+
+  const navigateTo = useNavigate();
     return (
       <div className="popup-overlay">
       <div className="popup-container">
@@ -10,7 +15,7 @@ function Logout({ onCancel, onConfirm }) {
           <button className="cancel-button" onClick={onCancel}>
             Annuler
           </button>
-          <button className="confirm-button" onClick={onConfirm}>
+          <button className="confirm-button" onClick={()=>{navigateTo("../Login")}}>
             Confirmer
           </button>
         </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Line } from 'react-chartjs-2';
 import Chart from "../components/Chart";
+import Logout from "../components/popups/Logout";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
@@ -18,6 +19,7 @@ import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa'
 
 function Activites() {
   const navigateTo = useNavigate();
+  const [counter, setCounter] = useState(false);
 
   function handleAccueilClick() {
     navigateTo("../accueil");
@@ -33,6 +35,9 @@ function Activites() {
   }
   function handleProfileClick() {
     navigateTo("../profile");
+  }
+  function handleLogoutClick() {
+    setCounter(true);
   }
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -62,7 +67,7 @@ function Activites() {
         <div className='sidebar-bottom'>
           <div className='logout-line'></div>
           <div>
-            <i className='logout-btn'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
+            <i className='logout-btn' onClick={handleLogoutClick}><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
           </div>
         </div>
       </div>
@@ -168,6 +173,10 @@ function Activites() {
           </div>
         </div>
       </div>
+      {counter && (
+        <Logout></Logout>
+        
+      )}
     </div>
   );
 }

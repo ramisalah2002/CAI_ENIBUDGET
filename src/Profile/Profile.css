@@ -92,6 +92,7 @@ body {
     gap: 10px;
     font-style: normal;
     color: #f2bfbd;
+    cursor: pointer;
 }
 .logout-icon{
     transform: scaleX(-1);

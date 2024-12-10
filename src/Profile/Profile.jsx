@@ -73,7 +73,7 @@ function Profile() {
         <div className='sidebar-bottom'>
           <div className='logout-line'></div>
           <div>
-            <i className='logout-btn'><LogoutIcon className='logout-icon' onClick={handleLogoutClick} color="black" />Deconnexion</i>
+            <i className='logout-btn' onClick={handleLogoutClick}><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
           </div>
         </div>
       </div>

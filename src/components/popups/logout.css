@@ -28,6 +28,7 @@
     font-weight: 500;
     color: #acacac;
     margin-bottom: 20px;
+    text-wrap: nowrap;
   }
   
   /* Buttons Container */

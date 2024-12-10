@@ -1,19 +1,27 @@
 import React, { useState } from "react";
 import "./ChangeBudget.css";
+import { Link, useNavigate } from "react-router-dom";
 
-const ChangeBudget = ({ onClose, onSave }) => {
+const ChangeBudget = ({ onSave }) => {
+  const navigateTo = useNavigate();
+
   const [budget, setBudget] = useState(40.0);
 
   const handleInputChange = (event) => {
     setBudget(event.target.value);
   };
 
+  function handleClose(){
+    navigateTo('./../../Profile');
+  }
+
   return (
+
     <div className="popup-overlay">
       <div className="popup-container">
         <div className="popup-header">
           <p>Changer le budget mensuel</p>
-          <button className="close-button" onClick={onClose}>
+          <button className="close-button" onClick={handleClose} >
             &times;
           </button>
         </div>
@@ -34,6 +42,7 @@ const ChangeBudget = ({ onClose, onSave }) => {
         </div>
       </div>
     </div>
+
   );
 };
 

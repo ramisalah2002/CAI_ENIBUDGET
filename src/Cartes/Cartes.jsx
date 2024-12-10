@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Line } from 'react-chartjs-2';
 import StatisticsChart from '../components/Chart';
+import Logout from "../components/popups/Logout";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend } from 'chart.js';
 
 // Register the required components for Chart.js
@@ -21,6 +22,7 @@ import FastfoodIcon from '@mui/icons-material/Fastfood';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 function Cartes() {
   const navigateTo = useNavigate();
+  const [counter, setCounter] = useState(false);
   function handleAccueilClick() {
     navigateTo("../accueil");
   }
@@ -36,6 +38,10 @@ function Cartes() {
   function handleProfileClick() {
     navigateTo("../profile");
   }
+  function handleLogoutClick() {
+    setCounter(true);
+  }
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const [selectedOption, setSelectedOption] = useState("par semaine");
@@ -75,7 +81,7 @@ function Cartes() {
         <div className='sidebar-bottom-1'>
           <div className='logout-line-1'></div>
           <div>
-            <i className='logout-btn-1'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
+            <i className='logout-btn-1' onClick={handleLogoutClick}><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
           </div>
         </div>
       </div>
@@ -211,6 +217,9 @@ function Cartes() {
           </div>
         </div>
       </div>
+      {counter && (
+        <Logout></Logout>
+      )}
     </div>
   );
 }

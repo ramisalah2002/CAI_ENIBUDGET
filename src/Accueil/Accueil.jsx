@@ -6,7 +6,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
 
-import './Accueil.css';
+import './test1.css';
 import GridViewIcon from '@mui/icons-material/GridView';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
@@ -14,7 +14,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa';
+import NorthIcon from '@mui/icons-material/North';
 
 function Accueil() {
 
@@ -100,71 +100,115 @@ function Accueil() {
                     </div>
                   </div>
                 </div>
+                <div className='card-info-section'>
+                  <label className='montant-dispo-label'>Montant disponible</label>
+                  <h1 className='montant-dispo'>€536.80</h1>
+                  <div className='solde-limit-container'>
+                    <div className='solde-container'>
+                      <label>Solde de la carte</label>
+                      <label className='montant-text'>€459.90</label>
+                    </div>
+                    <div className='limit-container'>
+                      <label>Limite de la carte</label>
+                      <label className='montant-text'>€459.90</label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="stats-container">
-      <div className="flex items-center justify-between mb-2">
-        <h2 className="text-lg font-bold">Statistiques</h2>
-        <div className="flex items-center space-x-4">
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-lg font-bold">Statistiques</h2>
+                <div className="flex items-center space-x-4">
 
-          <div className="flex items-center">
-            <span
-              className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: "#4b5bbe" }}
-            ></span>
-            <span className="ml-2 text-sm">Entrant</span>
-          </div>
-          <div className="flex items-center">
-            <span
-              className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: "#e84f16" }}
-            ></span>
-            <span className="ml-2 text-sm">Sortant</span>
-          </div>
+                  <div className="flex items-center">
+                    <span
+                      className="w-4 h-4 rounded-full"
+                      style={{ backgroundColor: "#4b5bbe" }}
+                    ></span>
+                    <span className="ml-2 text-sm">Entrant</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span
+                      className="w-4 h-4 rounded-full"
+                      style={{ backgroundColor: "#e84f16" }}
+                    ></span>
+                    <span className="ml-2 text-sm">Sortant</span>
+                  </div>
 
-          {/* Dropdown */}
-          <div className="relative">
-            <button
-              className="option-btn flex items-center justify-between w-full px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring focus:ring-gray-300"
-              onClick={() => setDropdownOpen((prev) => !prev)}
-            >
-              {selectedOption}{" "}
-              <svg
-                className="w-4 h-4 ml-2"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            {dropdownOpen && (
-              <div className="absolute right-0 z-10 w-32 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg">
-                {options.map((option) => (
-                  <button
-                    key={option}
-                    className="block w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
-                    onClick={() => handleOptionSelect(option)}
-                  >
-                    {option}
-                  </button>
-                ))}
+                  {/* Dropdown */}
+                  <div className="relative">
+                    <button
+                      className="option-btn flex items-center justify-between w-full px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring focus:ring-gray-300"
+                      onClick={() => setDropdownOpen((prev) => !prev)}
+                    >
+                      {selectedOption}{" "}
+                      <svg
+                        className="w-4 h-4 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </button>
+                    {dropdownOpen && (
+                      <div className="absolute right-0 z-10 w-32 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+                        {options.map((option) => (
+                          <button
+                            key={option}
+                            className="block w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+                            onClick={() => handleOptionSelect(option)}
+                          >
+                            {option}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
-            )}
-          </div>
-        </div>
-      </div>
-      <Chart />
-    </div>
+              <Chart />
+            </div>
           </div>
           <div className='right-body'>
-            <div className='balanse-container'></div>
+            <div className='balance-container'>
+              <div className='card-balances current-balance'>
+                <div className='drawn-icon'>
+                  <div className="rect2-div"></div>
+                  <div className="rect1-div">
+                    <div className="rect3-div"></div>
+                    <div className="rect4-div"></div>
+                  </div>
+                </div>
+                <label className="balances-text">Solde actuel</label>
+                <label className="balances-money"><p>€</p><label style={{color: "#0065F9"}}>456.78</label></label>
+              </div>
+              <div className='card-balances total-expenses'>
+                <div className='drawn-icon'>
+                    <div className="rect5-div">
+                      <NorthIcon className='arrow-balance-icon'/>
+                    </div>
+                </div>
+                <label className="balances-text">Total dépenses</label>
+                <label className="balances-money"><p>€</p>456.78</label>
+              </div>
+              <div className='card-balances total-income'>
+                <div className='drawn-icon'>
+                  <div className="rect6-div">
+                    <NorthIcon className='arrow-balance-icon green-arrow'/>
+                  </div>
+                </div>
+                <label className="balances-text">Total revenus</label>
+                <label className="balances-money"><p>€</p>456.78</label>
+              </div>
+            </div>
             <div className='expense-container'></div>
           </div>
         </div>

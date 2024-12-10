@@ -161,6 +161,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 .left-body{
     width: 754px;
@@ -339,4 +340,125 @@ body {
 .montant-text{
     font-size: 20px;
     color: #000;
+}
+.right-body{
+    width: 100%;
+}
+.balance-container{
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.balance-container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.card-balances{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.balances-text{
+    font-size: 14px;
+    color: #acacac;
+    font-family: 'Poppins';
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.balances-money{
+    font-size: 22px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.balances-money p{
+    margin-top: 5px;
+    margin-right: 1px;
+    font-size: 16px;
+    color: #ababab;
+    
+}
+.rect1-div{
+    width: 36px;
+    height: 30px;
+    background: #A0CAFC;
+    border-radius: 5px;
+    z-index: 2;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 5px;
+    position: relative;
+}
+.rect2-div{
+    width: 23px;
+    height: 17px;
+    background: #0370FA;
+    border-radius: 5px;
+    z-index: 1;
+    margin-bottom: -10px;
+}
+.rect3-div{
+    width: 15px;
+    height: 3px;
+    background: #0370FA;
+    border-radius: 1px;
+    z-index: 1;
+    margin-bottom: -8px;
+}
+.rect4-div{
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    background: #0370FA;
+    border-radius: 2px;
+    z-index: 99;
+    margin-top: 1px;
+    margin-left: 25px;
+}
+.rect5-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 36px;
+    height: 24px;
+    background: #FDBEBE;
+    margin-top: 15px;
+}
+.rect6-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 36px;
+    height: 24px;
+    background: #A9E8CB;
+    margin-top: 15px;
+}
+.arrow-balance-icon{
+    margin-top: -12px;
+}
+.green-arrow{
+    transform: rotate(180deg);
+}
+.arrow-balance-icon *{
+    padding: 10px;
+    color: #F23B39;
+}
+
+.green-arrow *{
+    padding: 10px;
+    color: #0CBC67;
 }

@@ -37,7 +37,7 @@ function Signup() {
       <div className="right-panel">
         <h1 className="form-title">S’inscrire</h1>
         <p className="form-subtitle">
-          Vous avez déjà un compte? <span className="link">Se connecter</span>
+          Vous avez déjà un compte? <span className="link" onClick={()=>{navigateTo("../Login")}}>Se connecter</span>
         </p>
         <form className="signup-form">
         <div className="form-row">

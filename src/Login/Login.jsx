@@ -37,7 +37,7 @@ function Login() {
       <div className="right-panel">
         <h1 className="form-title">Se connecter</h1>
         <p className="form-subtitle">
-          Vous n’avez pas de compte? <span className="link">S’inscrire</span>
+          Vous n’avez pas de compte? <span className="link" onClick={()=>{navigateTo("../Signup")}}>S’inscrire</span>
         </p>
         <form className="login-form">
           <div className="form-group">

@@ -1,0 +1,77 @@
+.popup-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(245, 245, 245, 0.8);
+    z-index: 99;
+}
+  
+.popup {
+    width: 450px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.text-ask-disconnect {
+    color: #c7c7c7;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-wrap: nowrap;
+}
+  
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+.rectangle-cancel {
+    width: 40%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #edeef2;
+    cursor: pointer;
+}
+
+.text-cancel {
+    color: #73818f;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+  
+.rectangle-confirm {
+    width: 40%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #fdbebe;
+    cursor: pointer;
+}
+  
+.text-confirm {
+    color: #f23b39;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+  

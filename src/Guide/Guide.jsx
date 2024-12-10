@@ -19,9 +19,10 @@ import BookmarksIcon from '../components/BookmarksIcon';
 import PencilEditIcon from '../components/PencilEditIcon';
 import FilterIcon from '../components/FilterIcon';
 import ArrowDownIcon from "../components/ArrowDownIcon";
-import MoreIcon from "../components/MoreIcon"
-import MenuIcon from "../components/MenuIcon"
-import GroupIcon from "../components/GroupIcon"
+import MoreIcon from "../components/MoreIcon";
+import MenuIcon from "../components/MenuIcon";
+import GroupIcon from "../components/GroupIcon";
+import Logout from "../components/popups/logout";
 
 import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa';
 import SupportImg from "../img/support.png";

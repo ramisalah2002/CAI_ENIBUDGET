@@ -172,8 +172,9 @@ body {
 }
 .mes-cats-1{
     border-radius: 15px;
+    display: flex;
     flex-direction: row;
-    background-color: #fff;
+    background-color: #ffffff;
     gap: 26px;
 }
 .right-body-1{
@@ -330,3 +331,52 @@ height: 37px;
     gap: 20px;
     margin-top: 20px;
 }
+
+.budget-categories-container {
+    display: flex;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+  
+  .budget-category-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-details {
+    width: 100%;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .card-amount {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-percentage {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  

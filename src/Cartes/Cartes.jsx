@@ -17,7 +17,8 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa'; // Import icons from react-icons
 import SuiviChart from "../components/SuiviChart";
-
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 function Cartes() {
   const navigateTo = useNavigate();
   function handleAccueilClick() {
@@ -47,12 +48,15 @@ function Cartes() {
     setSelectedOption(option);
     setDropdownOpen(false); // Close the dropdown
   };
-  const CategoriesBudgetaires = () => {
     const categories = [
-      { name: 'Fastfood', amount: '€60', limit: '€40', percentage: 50 },
-      { name: 'Courses', amount: '€60', limit: '€40', percentage: 25 },
-      { name: 'Beauté & santé', amount: '€20', limit: '€40', percentage: 50 },
-    ];}
+      { icon: FastfoodIcon ,name: 'Fastfood', amount: '€60', limit: '€40', percentage: 50 },
+      { icon: ShoppingCartIcon ,name: 'Courses', amount: '€60', limit: '€40', percentage: 25 },
+      { icon: FastfoodIcon ,name: 'Beauté & santé', amount: '€20', limit: '€40', percentage: 50 },
+    ];
+    const data = {
+      incoming: '€234.34',
+      outgoing: '€234.34',
+    };
   
 
   return (
@@ -121,12 +125,12 @@ function Cartes() {
                 
               </div>
                <div className="mes-cats">
-                             {/* <div className="categories-cards">
+                              <div className="categories-cards">
                                       {categories.map((category, index) => (
                                         <div className="category-card" key={index}>
-                                          <div className="category-icon">
-                                            {/* Utilisez une icône ou un texte pour représenter chaque catégorie 
-                                            <span role="img" aria-label="icon">🍔</span>
+                                          <div  className="category-icon">
+                                            {/* Utilisez une icône ou un texte pour représenter chaque catégorie */}
+                                            <category.icon style={{ color: 'red', display: 'block', margin: '0 auto' }} className="ssat" />
                                           </div>
                                           <div className="category-details">
                                             <h4 className="category-name">{category.name}</h4>
@@ -142,9 +146,25 @@ function Cartes() {
                                           </div>
                                         </div>
                                       ))}
-                               </div>*/}
+                               </div>
   
               </div>
+              <div className="budget-summary-container">
+                  <div className="budget-item incoming">
+                    <span className="arrow">↙</span>
+                    <div>
+                      <p className="label">Argent entrant</p>
+                      <p className="amount">{data.incoming}</p>
+                    </div>
+                  </div>
+                  <div className="budget-item outgoing">
+                    <span className="arrow">↗</span>
+                    <div>
+                      <p className="label">Argent sortant</p>
+                      <p className="amount">{data.outgoing}</p>
+                    </div>
+                  </div>
+                </div>
              
             </div>
             

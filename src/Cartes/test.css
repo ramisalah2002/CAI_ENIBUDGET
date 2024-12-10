@@ -100,6 +100,10 @@ body {
 .logout-icon-1 *{
     color: #f2bfbd;
 }
+.category-icon{
+    width: 30%;
+    align-items: center;
+}
 
 .logout-line1-1{
     width: 100%;
@@ -132,7 +136,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.notif-container, .user-eclipse-1{
+.notif-container, .user-eclipse-1, .category-icon{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -170,7 +174,7 @@ body {
     height: 320px;
     gap: 26px;
 }
-.mes-cats-1{
+.categories-cards{
     border-radius: 15px;
     display: flex;
     flex-direction: row;
@@ -325,8 +329,20 @@ height: 37px;
 .cat-budget-1{
     width: 100%;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: #ffffff;
     height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+.category-card{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: #f2f2f2;
     padding: 20px;
     gap: 20px;
     margin-top: 20px;
@@ -342,7 +358,7 @@ height: 37px;
   }
   
   .budget-category-card {
-    background-color: #fff;
+    background-color: #F8FBFB;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
@@ -378,5 +394,52 @@ height: 37px;
   .card-percentage {
     font-size: 0.9rem;
     font-weight: bold;
+  }
+  
+  .ssat *{
+    color: blue;
+  }
+
+  .budget-summary-container {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    border-radius: 10px;
+  }
+  
+  .budget-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 0.5rem;
+  }
+  
+  .budget-item.incoming {
+    border-left: 5px solid #32c671; /* Vert pour "entrant" */
+  }
+  
+  .budget-item.outgoing {
+    border-left: 5px solid #f95a5a; /* Rouge pour "sortant" */
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+  }
+  
+  .label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
   }
   

@@ -7,7 +7,7 @@ body {
     color: black;
     font-family: "Poppins";
 }
-.main-container{
+.main-container-1{
     width: 100vw;
     height: 100vh;
     background: #F2F3F7;
@@ -15,7 +15,7 @@ body {
     flex-direction: row;
     overflow-y: hidden;
 }
-.sidebar{
+.sidebar-1{
     width: 254px;
     height: 100%;
     background: #fff;
@@ -27,24 +27,24 @@ body {
 
 }
 
-.sidebar-top{
+.sidebar-top-1{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
-.logo-label{
+.logo-label-1{
     font-size: 36px;
     font-weight: 600;
     color: #383644;
 }
-.nav-links{
+.nav-links-1{
     margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.nav-link{
+.nav-link-1{
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
@@ -55,33 +55,33 @@ body {
     justify-content: flex-start;
     gap: 10px;
 }
-.nav-selected{
+.nav-selected-1{
     background: #46455A;
     color: white;
     height: 58px;
     padding: 10px 20px;
     border-radius: 10px;
 }
-.other-link{
+.other-link-1{
     color: #acacac;
     padding: 10px 20px;
 }
-.nav-selected *{
+.nav-selected-1 *{
     color: #fff;
 }
-.other-icon *{
+.other-icon-1 *{
     color: #acacac;
 }
-.icon{
+.icon-1{
     width: 20px;
 }
-.sidebar-bottom{
+.sidebar-bottom-1{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-bottom: 10px;
 }
-.logout-btn{
+.logout-btn-1{
     width: 100%;
     text-align: center;
     display: flex;
@@ -93,22 +93,22 @@ body {
     font-style: normal;
     color: #f2bfbd;
 }
-.logout-icon{
+.logout-icon-1{
     transform: scaleX(-1);
     color: #f2bfbd;
 }
-.logout-icon *{
+.logout-icon-1 *{
     color: #f2bfbd;
 }
 
-.logout-line {
+.logout-line1-1{
     width: 100%;
     position: relative;
     border-top: 1px solid #ababab;
     box-sizing: border-box;
     height: 1px;
 }
-.right-container{
+.right-container-1{
     width: 100%;
     height: 100%;
     padding: 16px 28px;
@@ -117,7 +117,7 @@ body {
     gap: 20px;
     overflow-y: scroll;
 }
-.header-title{
+.header-title-1{
     font-size: 26px;
     font-weight: 600;
     font-family: Poppins;
@@ -125,14 +125,14 @@ body {
     text-align: left;
 }
 
-.header{
+.header-1{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.notif-container, .user-eclipse{
+.notif-container, .user-eclipse-1{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -141,14 +141,14 @@ body {
     display: flex;align-items: center;
     justify-content: center;
 }
-.right-header{
+.right-header-1{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 22px;
 }
-.user-name{
+.user-name-1{
     font-size: 16px;
     font-weight: 400;
     font-family: Inter;
@@ -156,38 +156,75 @@ body {
     text-align: left;
 }
 
-.home-body{
+.home-body-1{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
-.left-body{
-    width: 1000px;
+.left-body-1{
+    width: 67%;
     border-radius: 15px;
     background-color: #fff;
     height: 320px;
     gap: 26px;
 }
-.my-cards-container{
+.mes-cats-1{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    gap: 26px;
+}
+.right-body-1{
+    width: 33%;
+    border-radius: 15px;
+    height: 320px;
+    gap: 26px;
+}
+.my-cards-container-1{
     width: 100%;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 20px;
     gap: 20px;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
-.my-cards-header{
+.activities-1{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.my-acts-header-1{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.my-cards-header .my-cards-title{
+.my-cards-bottom-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.my-acts-header .my-acts-title-1{
     font-size: 24px;
 }
-.my-cards-header .add-card-btn{
+.delete-card{
+    font-size: 14px;
+    color: red;
+}
+.my-acts-header-1 .add-act-btn-1{
     padding: 10px;
     border-radius: 5px;
     background-color: #ebeaee;
@@ -195,7 +232,7 @@ body {
     text-align: center;
     width: fit-content;
 }
-.my-cards-info-container{
+.my-cards-info-container-1{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -203,18 +240,18 @@ body {
     justify-content: space-between;
 }
 
-.my-card-background{
+.my-card-background-1{
     width: 400px;
     position: relative;
     border-radius: 20px;
     background-color: #46445a;
     height: 225px;
 }
-.my-cards-info{
+.my-cards-info-1{
     width: 100%;
     height: 225px;
 }
-.my-card-back-header{
+.my-card-back-header-1{
     width: 100%;
     height: 45%;
     background: #46445a;
@@ -224,7 +261,7 @@ body {
     align-items: center;
     padding: 20px;
 }
-.my-card-back-bottom{
+.my-card-back-bottom-1{
     width: 100%;
     height: 55%;
     background: #535169;
@@ -236,17 +273,17 @@ body {
     padding: 30px;
     padding-top: 10px;
 }
-.eclipse{
+.eclipse-1{
     width: 34px;
     position: relative;
     border-radius: 50%;
     background-color: rgba(122, 121, 135, 0.66);
     height: 34px;
 }
-.eclipse2{
+.eclipse2-1{
     margin-left: -15px;
 }
-.card-number{
+.card-number-1{
     font-size: 22px;
     display: inline-block;
     font-family: Poppins;
@@ -255,14 +292,14 @@ body {
     text-transform: uppercase;
     font-weight: 900;
 }
-.card-holder-date{
+.card-holder-date-1{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.card-holder-date *{
+.card-holder-date-1 *{
     font-size: 16px;
     display: inline-block;
     font-family: Poppins;
@@ -270,7 +307,7 @@ body {
     text-align: left;
     font-weight: 900;
 }
-.stats-container{
+.stats-container-1{
     width: 100%;
     border-radius: 15px;
     background-color: #fff;
@@ -278,10 +315,68 @@ body {
     padding: 20px;
     gap: 20px;
 }
-.option-btn{
+.option-btn-1{
     width: 100%;
 position: relative;
 border-radius: 5px;
 background-color: #f6f6f6;
 height: 37px;
 }
+.cat-budget-1{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #fff;
+    height: fit-content;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.budget-categories-container {
+    display: flex;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+  
+  .budget-category-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-details {
+    width: 100%;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .card-amount {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-percentage {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  

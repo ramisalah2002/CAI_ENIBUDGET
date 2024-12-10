@@ -80,10 +80,12 @@ function Guide() {
         </div>
       </div>
       <div className='right-container'>
-        <div className='header'>
-          <label className='header-title'>Bien gérer votre budget</label>
+      <div className='header'>
+          <label className='header-title'>Accueil</label>
           <div className='right-header'>
-            <div className='notif-container'></div>
+            <div className='notif-container'>
+              <NotificationsNoneIcon className='notif-icon'  color="black" />
+            </div>
             <div className='user-eclipse'></div>
             <label className='user-name'>Hugo</label>
           </div>

@@ -164,8 +164,8 @@ function Profile() {
       {counter && (
         //<AddCard></AddCard>
         //<AddExpence></AddExpence>
-        //<ChangeBudget></ChangeBudget>
-        <Logout></Logout>
+        <ChangeBudget></ChangeBudget>
+        //<Logout></Logout>
         
       )}
     </div>

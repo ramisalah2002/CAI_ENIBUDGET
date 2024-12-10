@@ -1,33 +1,40 @@
-import React from 'react';
-import './changebudget.css';
-import CloseIcon from "../CloseIcon"
-function ChangeBudget() {
+import React, { useState } from "react";
+import "./ChangeBudget.css";
+
+const ChangeBudget = ({ onClose, onSave }) => {
+  const [budget, setBudget] = useState(40.0);
+
+  const handleInputChange = (event) => {
+    setBudget(event.target.value);
+  };
+
   return (
-    <div className='popup-overlay'>
-    <div className="popup">
-        <div className='top-popup'>
-            <label className="text-budget">Changer le budget mensuel</label>
-            <CloseIcon className='close-icon' />
+    <div className="popup-overlay">
+      <div className="popup-container">
+        <div className="popup-header">
+          <p>Changer le budget mensuel</p>
+          <button className="close-button" onClick={onClose}>
+            &times;
+          </button>
         </div>
-        <div className='space'></div>
-        <div className='bot-popup'>
-            <div className='rectangle-input'>
-                <input
-                    type="number"
-                    className="input-money"
-                    placeholder="40.00"
-                    step="1"
-                    min="0"
-                />
-                <span className="currency-symbol">€</span>
-            </div>
-            <div className='rectangle-save'>
-                <label className="text-save">Enregistrer</label>
-            </div>
+        <div className="popup-divider"></div>
+        <div className="popup-content">
+          <div className="budget-input-container">
+            <span>€</span>
+            <input
+              type="text"
+              className="budget-input"
+              value={budget}
+              onChange={handleInputChange}
+            />
+          </div>
+          <button className="save-button-popup" onClick={() => onSave(budget)}>
+            Enregistrer
+          </button>
         </div>
+      </div>
     </div>
-</div>
   );
-}
+};
 
 export default ChangeBudget;

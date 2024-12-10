@@ -14,7 +14,18 @@ import InfoIcon from '@mui/icons-material/Info';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import SearchIcon from '@mui/icons-material/Search';
+import BookmarksIcon from '../components/BookmarksIcon';
+import PencilEditIcon from '../components/PencilEditIcon';
+import FilterIcon from '../components/FilterIcon';
+import ArrowDownIcon from "../components/ArrowDownIcon";
+import MoreIcon from "../components/MoreIcon"
+import MenuIcon from "../components/MenuIcon"
+import GroupIcon from "../components/GroupIcon"
+
 import { FaCog, FaTachometerAlt, FaInbox, FaUsers, FaBox } from 'react-icons/fa';
+import SupportImg from "../img/support.png";
+
 
 function Guide() {
   const navigateTo = useNavigate();
@@ -34,6 +45,7 @@ function Guide() {
   function handleProfileClick() {
     navigateTo("../profile");
   }
+  
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -53,125 +65,136 @@ function Guide() {
         <div className='sidaber-top'>
           <label className='logo-label'>Enibudget</label>
           <ul className='nav-links'>
-            <li className='nav-link other-link'onClick={handleAccueilClick}><GridViewIcon className='' color="black" />Accueil</li>
-            <li className='nav-link other-link'onClick={handleCartesClick}><CreditCardIcon className='other-icon' color="" />Cartes</li>
-            <li className='nav-link other-link'onClick={handleActivitesClick}><SignalCellularAltIcon className='other-icon' color="" />Activités</li>
-            <li className='nav-link nav-selected'onClick={handleGuideClick}><InfoIcon className='other-icon'  color="" />Guide</li>
-            <li className='nav-link other-link'onClick={handleProfileClick}><SettingsIcon className='other-icon'  color="" />Profile</li>
+            <li className='nav-link other-link'onClick={handleAccueilClick}>Accueil</li>
+            <li className='nav-link other-link'onClick={handleCartesClick}>Cartes</li>
+            <li className='nav-link other-link'onClick={handleActivitesClick}>Activités</li>
+            <li className='nav-link nav-selected'onClick={handleGuideClick}>Guide</li>
+            <li className='nav-link other-link'onClick={handleProfileClick}>Profile</li>
           </ul>
         </div>
         <div className='sidebar-bottom'>
           <div className='logout-line'></div>
           <div>
-            <i className='logout-btn'><LogoutIcon className='logout-icon'  color="black" />Deconnexion</i>
+            <i className='logout-btn'>Deconnexion</i>
           </div>
         </div>
       </div>
       <div className='right-container'>
         <div className='header'>
-          <label className='header-title'>Accueil</label>
+          <label className='header-title'>Bien gérer votre budget</label>
           <div className='right-header'>
-            <div className='notif-container'>
-              <NotificationsNoneIcon className='notif-icon'  color="black" />
-            </div>
+            <div className='notif-container'></div>
             <div className='user-eclipse'></div>
             <label className='user-name'>Hugo</label>
           </div>
         </div>
-        <div className='home-body'>
-          <div className='left-body'>
-            <div className='my-cards-container'>
-              <div className='my-cards-header'>
-                <label className='my-cards-title'>Mes cartes</label>
-                <button className='add-card-btn'>
-                + Ajouter Nouvelle carte</button>
-              </div>
-              <div className='my-cards-info-container'>
-                <div className='my-card-background'>
-                  <div className='my-card-back-header'>
-                    <div className='eclipse eclipse1'></div>
-                    <div className='eclipse eclipse2'></div>
-                  </div>
-                  <div className='my-card-back-bottom'>
-                    <div className='card-number'>xxxx xxxx xxxx 1234</div>
-                    <div className='card-holder-date'>
-                      <label className='card-holder'>SOTIH Amine</label>
-                      <label className='card-date'>09/26</label>
-                    </div>
-                  </div>
-                </div>
+        
+        <div className='container'>
+          {/* Container gauche */}
+          <div className='left-container'>
+            <label className='text-research-name'>Rechercher une question</label>
+            <label className='text-question-to-tap'>Tapez votre question ou cherchez un mot clé</label>
+            <div className='input-div'>
+
+            <input 
+              className='input-question' 
+              type='text' 
+              placeholder='Commencez l’écriture' 
+            />
+            <SearchIcon className='other-icon' color="" />
+            </div>
+            <div className='layout-start'>
+              <label className='text-start'>Commencez</label>
+            </div>
+            <div className='question-exemples'>
+              <label className='text-question-exemple'>Question exemple 1</label>
+              <label className='text-question-exemple'>Question exemple 2</label>
+              <label className='text-question-exemple'>Question exemple 3</label>
+              <label className='text-question-exemple'>Question exemple 4</label>
+              <label className='text-question-exemple'>Question exemple 5</label>
+            </div>
+          <div className='right-container-support'>
+            <div className='layout-support'>
+              <label className='text-need-assistance'>Vous avez encore besoin d’une assistance ?</label>
+              <label className='text-send-question'>Envoyer votre question par mail</label>
+              <button className='bouton-contact'>
+                <span className='text-bouton-contact'>Contactez-nous</span>
+              </button>
+              <img className="image-support" src={SupportImg}></img>
+            </div>
+          </div>
+          </div>
+
+          {/* Container droit */}
+          <div className="right-container">
+            <div className="suggestion-bar-container">
+            <BookmarksIcon className='bookmark-icon' />
+            <label className='text-all-suggestions'>Toutes les suggestions</label>
+            <label className='text-saved'>Enregistrées</label>
+            <label className='text-draft'>Brouillon</label>
+          </div>
+            <div className="rectangle-background">
+              <div className="rectangle"></div>
+            </div>
+          <div className="suggestion-filter-container">
+            <div className="rectangle-pencil">
+              <PencilEditIcon className='penciledit-icon' />
+            </div>
+            <label className="text-new-suggestion">Nouvelle suggestion</label>
+            <FilterIcon className='filter-icon' />
+            <label className="text-filter">Filtre:</label>
+            <label className="text-a-z">A-Z</label>
+            <ArrowDownIcon className='arrow-down-icon' />
+            <div className="rectangle-more-menu">
+              <MoreIcon className='more-icon' />
+              <div className="rectangle-menu">
+                <MenuIcon className='menu-icon' />
               </div>
             </div>
-            <div className="stats-container">
-      <div className="flex items-center justify-between mb-2">
-        <h2 className="text-lg font-bold">Statistiques</h2>
-        <div className="flex items-center space-x-4">
-
-          <div className="flex items-center">
-            <span
-              className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: "#4b5bbe" }}
-            ></span>
-            <span className="ml-2 text-sm">Entrant</span>
           </div>
-          <div className="flex items-center">
-            <span
-              className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: "#e84f16" }}
-            ></span>
-            <span className="ml-2 text-sm">Sortant</span>
-          </div>
-
-          {/* Dropdown */}
-          <div className="relative">
-            <button
-              className="option-btn flex items-center justify-between w-full px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring focus:ring-gray-300"
-              onClick={() => setDropdownOpen((prev) => !prev)}
-            >
-              {selectedOption}{" "}
-              <svg
-                className="w-4 h-4 ml-2"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            {dropdownOpen && (
-              <div className="absolute right-0 z-10 w-32 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg">
-                {options.map((option) => (
-                  <button
-                    key={option}
-                    className="block w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
-                    onClick={() => handleOptionSelect(option)}
-                  >
-                    {option}
-                  </button>
-                ))}
+          <div className="guide-container">
+            <div className="rectangle-guide">
+              <div className="top-guide-container">
+                <label className="text-id-suggestion">Suggestion #2024-577</label>
+                <label className="text-time">08:01PM</label>
+                <GroupIcon className='group-icon' />
               </div>
-            )}
+              <label className="text-guide-title">Guide 1</label>
+              <label className="text-guide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+            </div>
+            <div className="rectangle-guide">
+              <div className="top-guide-container">
+                <label className="text-id-suggestion">Suggestion #2024-577</label>
+                <label className="text-time">08:01PM</label>
+                <GroupIcon className='group-icon' />
+              </div>
+              <label className="text-guide-title">Guide 1</label>
+              <label className="text-guide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+            </div>
+            <div className="rectangle-guide">
+              <div className="top-guide-container">
+                <label className="text-id-suggestion">Suggestion #2024-577</label>
+                <label className="text-time">08:01PM</label>
+                <GroupIcon className='group-icon' />
+              </div>
+              <label className="text-guide-title">Guide 1</label>
+              <label className="text-guide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+            </div>
+            <div className="rectangle-guide">
+              <div className="top-guide-container">
+                <label className="text-id-suggestion">Suggestion #2024-577</label>
+                <label className="text-time">08:01PM</label>
+                <GroupIcon className='group-icon' />
+              </div>
+              <label className="text-guide-title">Guide 1</label>
+              <label className="text-guide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
+            </div>
           </div>
-        </div>
-      </div>
-      <Chart />
-    </div>
-          </div>
-          <div className='right-body'>
-            <div className='balanse-container'></div>
-            <div className='expense-container'></div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
 
 export default Guide;
